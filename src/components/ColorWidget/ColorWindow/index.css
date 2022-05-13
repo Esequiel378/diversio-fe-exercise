@@ -1,0 +1,9 @@
+.color-window-wrapper {
+    border-color: 1px solid #AAAAAA;
+}
+
+.color-window-colorbox {
+    height: 200px;
+    width: 200px;
+    border-color: 1px solid #000000;  
+}
