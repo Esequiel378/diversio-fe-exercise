@@ -1,4 +1,5 @@
-import ColorWidget from "./components/ColorWidget";
+import ColorWidget from "src/components/ColorWidget";
+import styled from "styled-components";
 
 const COLOR_LIST = [
   "#D7CEE4",
@@ -29,8 +30,16 @@ const COLOR_LIST = [
   "#FFA600",
 ];
 
-const App = () => {
-  return <ColorWidget colorList={COLOR_LIST} />;
-};
+const AppContainer = styled.div`
+  background-color: ${({ theme }) => theme.background.primary};
+  width: 100wh;
+  height: 100vh;
+`;
+
+const App = () => (
+  <AppContainer>
+    <ColorWidget colorList={COLOR_LIST} />;
+  </AppContainer>
+);
 
 export default App;

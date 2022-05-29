@@ -5,5 +5,6 @@ export const ColorWidgetContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: aqua;
+
+  color: ${({ theme }) => theme.colors.text};
 `;

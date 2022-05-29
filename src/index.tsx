@@ -1,10 +1,26 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
+import styled, { ThemeProvider } from "styled-components";
+
+import App from "src/App";
+import Theme from "src/styles/theme";
+import CSSReset from "src/styles/CSSReset";
+
+const GlobalStylesWrapper = styled.div`
+  * {
+    font-family: "Open Sans", sans-serif;
+  }
+`;
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme={Theme}>
+      <CSSReset />
+
+      <GlobalStylesWrapper>
+        <App />
+      </GlobalStylesWrapper>
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
