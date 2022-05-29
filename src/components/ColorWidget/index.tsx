@@ -16,10 +16,8 @@ const ColorWidget = ({ colorList }: ColorWidgetProps) => {
         <h2>I am a placeholder</h2>
       </div>
       <div>
-
-          <ColorWindow />
-          <ColorSelector />
-
+        <ColorWindow />
+        <ColorSelector />
       </div>
     </div>
   );
