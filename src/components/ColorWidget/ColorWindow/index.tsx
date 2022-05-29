@@ -1,13 +1,10 @@
-import "./index.css";
+import { ColorBox, ColorWindowContainer } from "./styles";
 
 const ColorWindow = () => {
   return (
-    <div className="color-window-wrapper">
-      <div
-        style={{ backgroundColor: "grey" }}
-        className="color-window-colorbox"
-      />
-    </div>
+    <ColorWindowContainer>
+      <ColorBox />
+    </ColorWindowContainer>
   );
 };
 

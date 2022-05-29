@@ -1,21 +1,14 @@
-import "./index.css";
+import { ColorBox, ColorSelectorContainer } from "./styles";
 
 const ColorSelector = () => {
   return (
-    <div className="color-selector-wrapper">
-      <div
-        style={{ backgroundColor: "red" }}
-        className="color-selector-option"
-      />
-      <div
-        style={{ backgroundColor: "green" }}
-        className="color-selector-option"
-      />
-      <div
-        style={{ backgroundColor: "blue" }}
-        className="color-selector-option"
-      />
-    </div>
+    <ColorSelectorContainer>
+      <ColorBox color="red" />
+      <ColorBox color="orange" />
+      <ColorBox color="yellow" />
+      <ColorBox color="green" />
+      <ColorBox color="blue" />
+    </ColorSelectorContainer>
   );
 };
 

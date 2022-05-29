@@ -29,8 +29,8 @@ const COLOR_LIST = [
   "#FFA600",
 ];
 
-function App() {
+const App = () => {
   return <ColorWidget colorList={COLOR_LIST} />;
-}
+};
 
 export default App;

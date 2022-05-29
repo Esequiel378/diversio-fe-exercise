@@ -1,25 +1,25 @@
 import ColorSelector from "./ColorSelector";
 import ColorWindow from "./ColorWindow";
 
-import "./index.css";
+import { ColorWidgetContainer } from "./styles";
 
 type ColorWidgetProps = {
   colorList: string[];
+  title?: string;
 };
 
-const ColorWidget = ({ colorList }: ColorWidgetProps) => {
-  console.log(colorList);
-
+const ColorWidget = ({ title = "ColorWidget" }: ColorWidgetProps) => {
   return (
-    <div className="color-widget">
+    <ColorWidgetContainer>
       <div className="color-widget-title">
-        <h2>I am a placeholder</h2>
+        <h2>{title}</h2>
       </div>
+
       <div>
         <ColorWindow />
         <ColorSelector />
       </div>
-    </div>
+    </ColorWidgetContainer>
   );
 };
 
