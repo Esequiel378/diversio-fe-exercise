@@ -13,7 +13,7 @@ export type ThemeProps = {
   };
 };
 
-const Theme: ThemeProps = {
+const theme: ThemeProps = {
   colors: {
     primary: "#BD6979",
     secondary: "#ED8C71",
@@ -28,4 +28,4 @@ const Theme: ThemeProps = {
   },
 } as const;
 
-export default Theme;
+export default theme;

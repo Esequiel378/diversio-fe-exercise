@@ -3,11 +3,11 @@ import ReactDOM from "react-dom";
 import { ThemeProvider } from "styled-components";
 
 import App from "src/App";
-import { CSSReset, GlobalStylesContainer, Theme } from "./styles";
+import { CSSReset, GlobalStylesContainer, theme } from "./styles";
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider theme={Theme}>
+    <ThemeProvider theme={theme}>
       <CSSReset />
 
       <GlobalStylesContainer>
