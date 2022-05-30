@@ -6,6 +6,8 @@ export type ThemeProps = {
     black: string;
     white: string;
     text: string;
+    grey: string;
+    darkGrey: string;
   };
   background: {
     primary: string;
@@ -21,6 +23,8 @@ const theme: ThemeProps = {
     black: "#0d0c0c",
     white: "#ebe6e6",
     text: "#f2f2f2",
+    grey: "#8f8f8f",
+    darkGrey: "#4a4a49",
   },
   background: {
     primary: "#453C53",
