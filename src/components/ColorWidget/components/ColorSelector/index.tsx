@@ -12,7 +12,7 @@ const ColorSelector = ({ colors }: ColorSelectorProps) => {
 
   useEffect(() => {
     setSelectedColor(colors[0]);
-  }, [colors]);
+  }, [colors, setSelectedColor]);
 
   return (
     <ColorSelectorContainer>

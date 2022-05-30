@@ -1,4 +1,4 @@
-import { FC, useEffect } from "react";
+import { FC } from "react";
 
 import { useColorWidgetProviderContext } from "src/components/ColorWidget/context";
 import ColorSelector, { ColorSelectorProps } from "./components/ColorSelector";
