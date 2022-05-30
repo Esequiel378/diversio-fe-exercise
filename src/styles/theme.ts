@@ -6,6 +6,7 @@ export type ThemeProps = {
     black: string;
     white: string;
     text: string;
+    red: string;
     grey: string;
     darkGrey: string;
   };
@@ -26,6 +27,7 @@ const theme: ThemeProps = {
     black: '#0d0c0c',
     white: '#ebe6e6',
     text: '#f2f2f2',
+    red: '#e31919',
     grey: '#8f8f8f',
     darkGrey: '#4a4a49',
   },

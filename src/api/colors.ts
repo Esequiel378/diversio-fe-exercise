@@ -1,6 +1,7 @@
 const COLOR_LIST = [
   '#D7CEE4',
   '#CFB4F7',
+  '#eeea-1',
   '#6221EA',
   '#0725E8',
   '#B6BFF6',
@@ -25,6 +26,8 @@ const COLOR_LIST = [
   '#FF533B',
   '#FF811D',
   '#FFA600',
+  'rgb(0, 0, 0)',
+  'rgb(255, 255, 255)',
 ];
 
 // TODO: conect to a backend and use ReactQuery to cache requests
