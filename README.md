@@ -19,7 +19,7 @@ To run the linter use:
 yarn lint
 ```
 
-__lint runs before committing any code thanks to pre-commit hooks with [husky](https://typicode.github.io/husky/#/)__
+**lint runs before committing any code thanks to pre-commit hooks with [husky](https://typicode.github.io/husky/#/)**
 
 ![demo](./public/assets/demo.png)
 
@@ -40,3 +40,24 @@ There is no need to check if the color is valid or not, since the widget will re
 component
 
 Store the user definded color in the local storage unless a backend ready
+
+3. Copy and paste colors in different formats
+
+Ad a use I want to be able to copy the color I've selected in any of this formats
+
+`HEX`, `RGB`, `CMYK`, `HSV`, and `HSL`
+
+> Use google [color picker](https://g.co/kgs/F5DTZp) as inspiration
+
+All the options should have a copy icon that will copy the color value into the clipboard on user's click
+
+This new feature should be under the `ColorWindow` privew box
+
+
+4. Share colors with the world 🗺️
+
+As a user I want to be able to share my colors to others in two ways, specific color I've 
+added, and/or the entire config I have for my widget
+
+Use query strings to share/load colors from the url, when the backend is ready we could 
+generate a shorten link form the server
