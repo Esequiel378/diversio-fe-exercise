@@ -13,6 +13,9 @@ export type ThemeProps = {
     primary: string;
     secondary: string;
   };
+  border: {
+    primary: string;
+  };
 };
 
 const theme: ThemeProps = {
@@ -29,6 +32,9 @@ const theme: ThemeProps = {
   background: {
     primary: "#453C53",
     secondary: "#7F5270",
+  },
+  border: {
+    primary: "6px",
   },
 } as const;
 
