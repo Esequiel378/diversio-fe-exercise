@@ -11,11 +11,15 @@ export const ColorBox = styled.div<ColorBoxProps>`
   height: 200px;
   width: 100%;
 
+  ${({ theme }) => `
+    border-radius: ${theme.border.primary}
+  `};
+
   ${({ selectedColor, theme }) => {
     /* Render an empty like shape if there is no color selected*/
     if (!selectedColor || selectedColor === "transparent") {
       return `
-        border: 1px solid ${theme.colors.black};
+       border: 1px solid ${theme.colors.black};
         background: linear-gradient(
           to top right,
           rgba(0, 0, 0, 0) 0%,

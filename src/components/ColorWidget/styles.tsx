@@ -11,13 +11,13 @@ export const ColorWidgetContainer = styled.div<ColorWidgetContainerProps>`
   padding: 1rem;
   gap: 0.5rem;
 
-  border-radius: 6px;
   transition: all 0.2s ease-in-out;
 
   ${({ theme, selectedColor }) => `
     background-color: ${theme.colors.darkGrey};
     border: 1px solid ${theme.colors.grey};
     color: ${theme.colors.text};
+    border-radius: ${theme.border.primary};
 
     box-shadow: 0px 0px 8px 2px ${selectedColor};
   `}
