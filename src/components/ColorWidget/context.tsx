@@ -12,12 +12,9 @@ const ColorWidgetContextProvider: FC<{ children: ReactNode }> = ({ children }) =
     setSelectedColor,
   };
 
-  return (
-    <ColorWidgetContext.Provider value={value}>{children}</ColorWidgetContext.Provider>
-  );
+  return <ColorWidgetContext.Provider value={value}>{children}</ColorWidgetContext.Provider>;
 };
 
 export default ColorWidgetContextProvider;
 
-export const useColorWidgetProviderContext = () =>
-  useContext<ColorWidgetData>(ColorWidgetContext);
+export const useColorWidgetProviderContext = () => useContext<ColorWidgetData>(ColorWidgetContext);
