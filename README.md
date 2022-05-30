@@ -25,7 +25,7 @@ yarn lint
 
 ### TODO
 
-> This are features that would be nice to add if the time allows me
+> This are features that would be nice to add with more available time
 
 #### As a user I want to be able to edit the `COLOR_LIST`
 
@@ -43,7 +43,7 @@ Store the user definded color in the local storage unless a backend ready
 
 #### Copy and paste colors in different formats
 
-Ad a use I want to be able to copy the color I've selected in any of this formats
+As a use I want to be able to copy the color I've selected in any of this formats
 
 `HEX`, `RGB`, `CMYK`, `HSV`, and `HSL`
 
