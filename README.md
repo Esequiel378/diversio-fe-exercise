@@ -29,7 +29,7 @@ __lint runs before committing any code thanks to pre-commit hooks with [husky](h
 
 1. As a user I want to be able to edit the `COLOR_LIST`
 
-Add and edit ✏️a icon next to the title that will set the widget to an edit mode
+Add and edit ✏️ icon next to the title that will set the widget to an edit mode,
 where all the listed color will have a red icon (top right) to delete the color from the list.
 
 In the edit mode, the widget should have a way to add new colors, and option would be to add a
