@@ -1,12 +1,14 @@
 import styled from "styled-components";
 
-export const ColorWindowContainer = styled.div`
-  border-color: 1px solid #aaaaaa;
-`;
+export const ColorWindowContainer = styled.div``;
 
-export const ColorBox = styled.div`
+export type ColorBoxProps = {
+  color: string;
+};
+
+export const ColorBox = styled.div<ColorBoxProps>`
   height: 200px;
-  width: 200px;
-  border-color: 1px solid #000000;
-  background-color: grey;
+  width: 100%;
+
+  background-color: ${({ color }) => color};
 `;

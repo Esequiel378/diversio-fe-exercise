@@ -1,24 +1,21 @@
-import ColorSelector from "./ColorSelector";
+import ColorSelector, { ColorSelectorProps } from "./ColorSelector";
 import ColorWindow from "./ColorWindow";
 
-import { ColorWidgetContainer } from "./styles";
+import { ColorWidgetContainer, ColorWidgetContent, ColorWidgetTitle } from "./styles";
 
-type ColorWidgetProps = {
-  colorList: string[];
+type ColorWidgetProps = ColorSelectorProps & {
   title?: string;
 };
 
-const ColorWidget = ({ title = "ColorWidget" }: ColorWidgetProps) => {
+const ColorWidget = ({ colors, title = "ColorWidget" }: ColorWidgetProps) => {
   return (
     <ColorWidgetContainer>
-      <div className="color-widget-title">
-        <h2>{title}</h2>
-      </div>
+      <ColorWidgetTitle>{title}</ColorWidgetTitle>
 
-      <div>
+      <ColorWidgetContent>
         <ColorWindow />
-        <ColorSelector />
-      </div>
+        <ColorSelector colors={colors} />
+      </ColorWidgetContent>
     </ColorWidgetContainer>
   );
 };

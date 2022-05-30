@@ -3,7 +3,7 @@ import { ColorBox, ColorWindowContainer } from "./styles";
 const ColorWindow = () => {
   return (
     <ColorWindowContainer>
-      <ColorBox />
+      <ColorBox color="red" />
     </ColorWindowContainer>
   );
 };

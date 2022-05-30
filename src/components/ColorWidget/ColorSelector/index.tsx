@@ -1,13 +1,15 @@
 import { ColorBox, ColorSelectorContainer } from "./styles";
 
-const ColorSelector = () => {
+export type ColorSelectorProps = {
+  colors: string[];
+};
+
+const ColorSelector = ({ colors }: ColorSelectorProps) => {
   return (
     <ColorSelectorContainer>
-      <ColorBox color="red" />
-      <ColorBox color="orange" />
-      <ColorBox color="yellow" />
-      <ColorBox color="green" />
-      <ColorBox color="blue" />
+      {colors.map((color, index) => (
+        <ColorBox key={index} color={color} />
+      ))}
     </ColorSelectorContainer>
   );
 };
