@@ -1,5 +1,6 @@
-import styled from "styled-components";
-import { SelectedColor } from "src/components/ColorWidget/types";
+import styled from 'styled-components';
+
+import { SelectedColor } from 'src/components/ColorWidget/types';
 
 export const ColorWindowContainer = styled.div``;
 
@@ -17,7 +18,7 @@ export const ColorBox = styled.div<ColorBoxProps>`
 
   ${({ selectedColor, theme }) => {
     /* Render an empty like shape if there is no color selected*/
-    if (!selectedColor || selectedColor === "transparent") {
+    if (!selectedColor || selectedColor === 'transparent') {
       return `
        border: 1px solid ${theme.colors.black};
         background: linear-gradient(

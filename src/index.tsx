@@ -1,9 +1,9 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { ThemeProvider } from "styled-components";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { ThemeProvider } from 'styled-components';
 
-import App from "src/App";
-import { CSSReset, GlobalStylesContainer, theme } from "./styles";
+import App from 'src/App';
+import { CSSReset, GlobalStylesContainer, theme } from './styles';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -15,7 +15,7 @@ ReactDOM.render(
       </GlobalStylesContainer>
     </ThemeProvider>
   </React.StrictMode>,
-  document.getElementById("root")
+  document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function

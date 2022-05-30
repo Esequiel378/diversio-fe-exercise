@@ -1,5 +1,6 @@
-import styled from "styled-components";
-import { SelectedColor } from "./types";
+import styled from 'styled-components';
+
+import { SelectedColor } from './types';
 
 type ColorWidgetContainerProps = {
   selectedColor: SelectedColor;

@@ -1,7 +1,8 @@
-import styled from "styled-components";
-import { SelectedColor } from "src/components/ColorWidget/types";
+import styled from 'styled-components';
 
-const COLOR_BOX_SIZE = "30px";
+import { SelectedColor } from 'src/components/ColorWidget/types';
+
+const COLOR_BOX_SIZE = '30px';
 
 export const ColorSelectorContainer = styled.div`
   display: grid;

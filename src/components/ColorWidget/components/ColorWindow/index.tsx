@@ -1,5 +1,5 @@
-import { useColorWidgetProviderContext } from "src/components/ColorWidget/context";
-import { ColorBox, ColorWindowContainer } from "./styles";
+import { useColorWidgetProviderContext } from 'src/components/ColorWidget/context';
+import { ColorBox, ColorWindowContainer } from './styles';
 
 const ColorWindow = () => {
   const { selectedColor } = useColorWidgetProviderContext();

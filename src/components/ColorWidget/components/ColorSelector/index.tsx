@@ -1,7 +1,8 @@
-import { useEffect } from "react";
-import { useColorWidgetProviderContext } from "src/components/ColorWidget/context";
-import { SelectedColor } from "../../types";
-import { ColorBox, ColorSelectorContainer } from "./styles";
+import { useEffect } from 'react';
+
+import { useColorWidgetProviderContext } from 'src/components/ColorWidget/context';
+import { SelectedColor } from '../../types';
+import { ColorBox, ColorSelectorContainer } from './styles';
 
 export type ColorSelectorProps = {
   colors: SelectedColor[];
@@ -17,12 +18,7 @@ const ColorSelector = ({ colors }: ColorSelectorProps) => {
   return (
     <ColorSelectorContainer>
       {colors.map((color, index) => (
-        <ColorBox
-          key={index}
-          colorToRender={color}
-          selected={color === selectedColor}
-          onClick={() => setSelectedColor(color)}
-        />
+        <ColorBox key={index} colorToRender={color} selected={color === selectedColor} onClick={() => setSelectedColor(color)} />
       ))}
     </ColorSelectorContainer>
   );
