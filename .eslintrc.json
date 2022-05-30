@@ -1,0 +1,42 @@
+{
+  "extends": [
+    "react-app",
+    "react-app/jest"
+  ],
+  "rules": {
+    "object-shorthand": [
+      "error",
+      "always"
+    ],
+    "no-useless-rename": "error",
+    "simple-import-sort/imports": [
+      "error",
+      {
+        "groups": [
+          [
+            "^\\u0000"
+          ],
+          [
+            "^"
+          ],
+          [
+            "^src",
+            "^\\."
+          ]
+        ]
+      }
+    ],
+    "simple-import-sort/exports": "error",
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "import/no-duplicates": "error",
+    "unused-imports/no-unused-imports": "error",
+    "prettier/prettier": "warn"
+  },
+  "plugins": [
+    "import",
+    "prettier",
+    "simple-import-sort",
+    "unused-imports"
+  ]
+}
