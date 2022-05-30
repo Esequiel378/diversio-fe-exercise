@@ -38,6 +38,7 @@ const AppContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
   background-image: linear-gradient(
     320deg,
     hsl(263deg 16% 28%) 0%,

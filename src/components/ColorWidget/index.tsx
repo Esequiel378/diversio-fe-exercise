@@ -1,5 +1,9 @@
-import ColorSelector, { ColorSelectorProps } from "./ColorSelector";
-import ColorWindow from "./ColorWindow";
+import { FC, useEffect } from "react";
+
+import { useColorWidgetProviderContext } from "src/components/ColorWidget/context";
+import ColorSelector, { ColorSelectorProps } from "./components/ColorSelector";
+import ColorWindow from "./components/ColorWindow";
+import ColorWidgetContextProvider from "./context";
 
 import { ColorWidgetContainer, ColorWidgetContent, ColorWidgetTitle } from "./styles";
 
@@ -8,8 +12,10 @@ type ColorWidgetProps = ColorSelectorProps & {
 };
 
 const ColorWidget = ({ colors, title = "ColorWidget" }: ColorWidgetProps) => {
+  const { selectedColor } = useColorWidgetProviderContext();
+
   return (
-    <ColorWidgetContainer>
+    <ColorWidgetContainer selectedColor={selectedColor}>
       <ColorWidgetTitle>{title}</ColorWidgetTitle>
 
       <ColorWidgetContent>
@@ -20,4 +26,10 @@ const ColorWidget = ({ colors, title = "ColorWidget" }: ColorWidgetProps) => {
   );
 };
 
-export default ColorWidget;
+const ColorWidgetWrapper: FC<ColorWidgetProps> = (props) => (
+  <ColorWidgetContextProvider>
+    <ColorWidget {...props} />
+  </ColorWidgetContextProvider>
+);
+
+export default ColorWidgetWrapper;
