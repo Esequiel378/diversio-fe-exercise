@@ -27,7 +27,7 @@ yarn lint
 
 > This are features that would be nice to add if the time allows me
 
-1. As a user I want to be able to edit the `COLOR_LIST`
+#### As a user I want to be able to edit the `COLOR_LIST`
 
 Add and edit ✏️ icon next to the title that will set the widget to an edit mode,
 where all the listed color will have a red icon (top right) to delete the color from the list.
@@ -41,7 +41,7 @@ component
 
 Store the user definded color in the local storage unless a backend ready
 
-3. Copy and paste colors in different formats
+#### Copy and paste colors in different formats
 
 Ad a use I want to be able to copy the color I've selected in any of this formats
 
@@ -54,7 +54,7 @@ All the options should have a copy icon that will copy the color value into the 
 This new feature should be under the `ColorWindow` privew box
 
 
-4. Share colors with the world 🗺️
+#### Share colors with the world 🗺️
 
 As a user I want to be able to share my colors to others in two ways, specific color I've 
 added, and/or the entire config I have for my widget
