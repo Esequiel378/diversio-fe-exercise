@@ -2,6 +2,9 @@
 
 This is Diversio's front-end take-home exercise.
 
+> Backend coding-challenge [diversio-mortys-pizza
+](https://github.com/Esequiel378/diversio-mortys-pizza)
+
 ## How to run
 
 In the project directory, run:
@@ -43,7 +46,7 @@ Store the user definded color in the local storage unless a backend ready
 
 #### Copy and paste colors in different formats
 
-As a use I want to be able to copy the color I've selected in any of this formats
+As a user I want to be able to copy the color I've selected in any of this formats
 
 `HEX`, `RGB`, `CMYK`, `HSV`, and `HSL`
 
